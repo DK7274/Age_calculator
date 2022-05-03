@@ -13,7 +13,7 @@ monthDictionary = {
     "September":9,
     "October":10,
     "November":11,
-    "December":12,
+    "December":12
 }
 def reset():
     app.destroy()
