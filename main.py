@@ -1,6 +1,9 @@
 from guizero import *
+from pydub import AudioSegment
+import winsound
 from datetime import datetime
 import webbrowser
+import ffmpeg
 app = App("age calculator")
 monthDictionary = {
     "january" : 1,
@@ -17,6 +20,8 @@ monthDictionary = {
     "december":12
 }
 def close():
+    filename = "applause.wav"
+    winsound.PlaySound(filename,winsound.SND_FILENAME)
     webbrowser.open("https://www.youtube.com/watch?v=grd-K33tOSM")
     app.destroy()
 def age_calculate():
